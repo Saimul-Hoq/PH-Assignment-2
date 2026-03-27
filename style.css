@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: white;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+p,a{
+    color: white;
+    line-height: 1.5rem;    
+}
+
+.navbar{
+    background-color: #1A0B2E;
+}
+
+.wave{
+    background: linear-gradient(20deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.btn{
+    color: white;
+    font-weight: 600;
+    padding: 12.5px 16px;
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
+    border-radius: 22px;
+}
+.btn:hover{
+    background: linear-gradient(315deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.navbar a:hover{
+    font-size: 1.15rem;
+    background: linear-gradient(20deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
