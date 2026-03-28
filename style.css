@@ -9,31 +9,33 @@
 
 
 
-h1{
-    font-size: 3.75rem;
+h1 {
+    font-size: clamp(2rem, 6vw, 3.75rem);  
     font-weight: 800;
     color: white;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 700;
     color: white;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 4vw, 1.5rem);
     font-weight: 700;
     color: white;
 }
 
 p,a{
+    font-size: clamp(0.775rem, 2vw, 1.125rem);
     color: white;
     line-height: 1.5rem;    
 }
 
 .navbar{
     background-color: #1A0B2E;
+    padding-top: 1.5vw;
 }
 
 .wave{
@@ -44,16 +46,17 @@ p,a{
 }
 
 .btn{
+    font-size: clamp(0.8rem, 1.75vw, 1.125rem);
     color: white;
     font-weight: 600;
-    padding: 12.5px 16px;
+    padding: 0.75em 1.25em;
     background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
-    border-radius: 22px;
+    border-radius: 25px;
 }
 .btn:hover{
     background: linear-gradient(315deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100% );
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: clamp(0.87rem, 1.85vw, 1.25rem);
 }
 .navbar a:hover{
     font-size: 1.15rem;
@@ -61,4 +64,48 @@ p,a{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.hero{
+    background-image: url('/assets/hero-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-top: 4rem;
+}
+.circle-container{
+    position: relative;
+    display: inline-block;
+    width: clamp(180px, 35vw, 400px);
+}
+.hero-circle{
+    width: 100%;
+}
+.microphone{
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new{
+    position: absolute;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 3px 10px;
+    left: 85%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 16px #00FF88;
+
+}
+
+.subscribe{
+    background: transparent;
+    color: #00FF88;
+    border: 2px solid #00FF88;
 }
