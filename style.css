@@ -141,6 +141,7 @@ p,a{
     align-items: center;
 }
 
+
 .feature{
     background-color: #1A0B2E;
     padding: 5vw 15vw;
@@ -168,6 +169,35 @@ p,a{
 
 
 
+.host{
+    background-color: #1A0B2E;
+    padding: 3vw 10vw 5vw;
+}
+.host-container{
+    background-color: #351165;
+    border-radius: 20px;
+    padding: 2vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.host-img{
+    width: clamp(150px, 12vw, 250px);
+    height: clamp(150px, 12vw, 250px);
+    flex-shrink: 0;
+}
+
+.host-icons img{
+    object-fit: contain;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 50%;
+    
+}
+
+
+
+
 @media screen and (max-width: 576px) {
     .why-card-container{
         grid-template-columns: 1fr;
@@ -188,6 +218,13 @@ p,a{
     }
     .feature-card-container{
         grid-template-columns: 1fr;
+    }
+    .host-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-icons{
+        justify-content: center;
     }
 }
 
