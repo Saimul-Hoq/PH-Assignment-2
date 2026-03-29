@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -28,9 +30,13 @@ h3{
 }
 
 p,a{
-    font-size: clamp(0.775rem, 2vw, 1.125rem);
+    font-size: clamp(0.75rem, 2vw, 1.125rem);
     color: white;
     line-height: 1.5rem;    
+}
+
+.menu{
+    display: none;
 }
 
 .navbar{
@@ -73,6 +79,8 @@ p,a{
     background-position: center;
     position: relative;
     padding-top: 4rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .circle-container{
     position: relative;
@@ -120,3 +128,41 @@ p,a{
 .achievement h2{
     color: #00FF88;
 }
+
+.why{
+    background-color: #230E3D;
+    padding: 6vw 10vw;
+}
+.why-card{
+    background-color: #351165;
+    padding: 3vw;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .why-card-container{
+        grid-template-columns: 1fr;
+    }
+    .why-card{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .about-achievements{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .navbar .btn, a{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
