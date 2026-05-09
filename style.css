@@ -77,6 +77,11 @@ p,a{
     -webkit-background-clip: text;
 }
 
+#login-button:hover{
+    background: transparent;
+    /* -webkit-text-fill-color: white; */
+}
+
 .hero{
     background-image: url('./assets/hero-bg.png');
     background-size: 100% 100%;
